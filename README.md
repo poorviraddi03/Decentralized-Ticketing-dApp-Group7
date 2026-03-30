@@ -102,8 +102,8 @@ Users (ticket holders) register a **Decentralized Identifier (DID)** on-chain. E
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/poorviraddi03/Decentralized-Ticketing-dApp-Group7.git
+cd contracts
 
 # Install dependencies
 npm install
