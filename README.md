@@ -119,7 +119,7 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 ### Option A — Remix IDE (Quickest for Demo)
 
 1. Open [https://remix.ethereum.org](https://remix.ethereum.org)
-2. Create a new workspace and paste each `.sol` file from `contracts/'
+2. Create a new workspace and paste each `.sol` file from `contracts/`
 3. Compile using Solidity compiler **^0.8.20**
 4. Connect MetaMask to **Polygon Amoy Testnet**
    - Add via [ChainList](https://chainlist.org/) → search "Amoy" → Add to MetaMask
