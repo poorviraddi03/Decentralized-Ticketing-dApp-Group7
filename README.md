@@ -127,8 +127,8 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 5. In the **Deploy & Run** tab, select **Injected Provider - MetaMask**
 6. Deploy contracts in this order:
    1. `DIDRegistry`
-   2. `TicketCredential`
-   3. `VerificationLog`
+   2. `VerificationLog`
+   3. `TicketCredential`
 7. Copy deployed contract addresses for use in the frontend
 
 ### Option B — Hardhat Local Network
