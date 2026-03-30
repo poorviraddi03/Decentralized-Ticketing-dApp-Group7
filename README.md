@@ -1,59 +1,96 @@
 Decentralized Identity and Ticket Verification System
+
 Project Overview
 This project implements a blockchain-based event ticketing system designed to improve security, transparency, and trust in ticket management. Traditional ticketing platforms rely on centralized systems, which are vulnerable to issues such as ticket fraud, duplication, and unauthorized resale.
+
 The proposed system uses smart contracts to issue, manage, and verify tickets linked to decentralized identities. This ensures that each ticket is authentic, traceable, and can only be used once.
+
 Key Features
-Decentralized identity registration for users
-Secure ticket issuance by event organizers
-On-chain ticket verification at entry points
-Prevention of duplicate or reused tickets
-Logging of all verification events on-chain
+- Decentralized identity registration for users
+- Secure ticket issuance by event organizers
+- On-chain ticket verification at entry points
+- Prevention of duplicate or reused tickets
+- Logging of all verification events on-chain
+
 System Architecture
+
 Actors
-User (Holder): Owns and presents the ticket
-Issuer (Event Organizer): Issues tickets
-Verifier (Entry System): Verifies tickets
+- User (Holder): Owns and presents the ticket
+- Issuer (Event Organizer): Issues tickets
+- Verifier (Entry System): Verifies tickets
+
 On-Chain Components
-DIDRegistry.sol → Manages decentralized identity registration
-TicketCredential.sol → Handles ticket issuance, transfer, verification, and revocation
-VerificationLog.sol → Records verification history
+- DIDRegistry.sol → Identity registration
+- TicketCredential.sol → Ticket management
+- VerificationLog.sol → Verification logging
+
 Off-Chain Components
-Ticket metadata storage (IPFS or database)
-Frontend application or CLI
+- IPFS or database storage
+- Frontend or CLI
+
 Technologies Used
-Solidity
-Ethereum / Polygon Amoy Testnet
-Remix IDE or Hardhat
-MetaMask
+- Solidity
+- Ethereum / Polygon Amoy Testnet
+- Remix IDE or Hardhat
+- MetaMask
+
 Project Structure
+
 .
 ├── README.md
 ├── contracts/
-│ ├── DIDRegistry.sol
-│ ├── TicketCredential.sol
-│ └── VerificationLog.sol
-├── scripts/
-│ └── deploy.js
-├── test/
-│ └── sample-test.js
-└── docs/
-└── architecture.md
+│   ├── DIDRegistry.sol
+│   ├── TicketCredential.sol
+│   └── VerificationLog.sol
+
 Setup and Deployment
+
 Using Remix IDE
-Open https://remix.ethereum.org
-Create a new workspace
-Upload all files from the contracts folder
+1. Open https://remix.ethereum.org
+2. Create a workspace
+3. Upload contract files
+
 Deployment Order
-Deploy DIDRegistry.sol
-Deploy VerificationLog.sol
-Deploy TicketCredential.sol with:
-DIDRegistry contract address
-VerificationLog contract address
+1. Deploy DIDRegistry
+2. Deploy VerificationLog
+3. Deploy TicketCredential with contract addresses
+
 Usage
-Register identity using registerIdentity()
-Issue ticket using issueTicket()
-Verify ticket using verifyTicket()
-View logs using VerificationLog
+
+1. Register identity
+2. Issue ticket
+3. Verify ticket
+4. Check logs
+
+Smart Contract Design
+
+- Modular structure
+- Separate contracts for identity, tickets, and logs
+- Interfaces used for interaction
+- Events used for tracking actions
+
+Scope
+
+Implemented
+- Identity registration
+- Ticket issuance
+- Ticket verification
+- Usage tracking
+
+Future Work
+- Ticket resale
+- Advanced identity verification
+- Frontend integration
+
+Team Members
+- Karthik Viyyapu
+- Argha Dhar
+- Poorvi Raddi
+- Rishi Krishnan Gurunathan
+- Smitkumar Sandipbhai Patel
+
+Project Status
+In developmentView logs using VerificationLog
 Smart Contract Design
 The system follows a modular structure:
 DIDRegistry → identity management
