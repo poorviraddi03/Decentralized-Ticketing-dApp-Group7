@@ -1,0 +1,19 @@
+{
+  "name": "decentralized-ticketing-dapp-group7",
+  "version": "1.0.0",
+  "description": "Decentralized Identity and Access Management (IAM) dApp — CSE 540 Group 7",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "coverage": "hardhat coverage"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.28.6"
+  }
+}
